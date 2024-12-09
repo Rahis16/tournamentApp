@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Creators{% endblock title %}
+
+{% block content %}
+<section class="top-creators">
+    <!-- Header -->
+    <div class="creators-header">
+        <h1>Top Creators</h1>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="searchCreator" placeholder="Search creators by name..." />
+        <button id="searchBtn"><ion-icon name="search"></ion-icon></button>
+    </div>
+
+    <!-- Creator List -->
+    <div class="creator-list">
+        <div class="creator2">
+            <div class="rank">
+                <span>#1</span>
+            </div>
+            <div class="avatar">
+                <img src="{% static 'images/top-players/player3.png' %}" alt="Creator 1 Avatar">
+            </div>
+            <div class="details">
+                <h3>Alpha Gamer</h3>
+                <p>Hosted: 120 Tournaments</p>
+            </div>
+            <div class="badge">
+                <ion-icon name="crown"></ion-icon>
+            </div>
+        </div>
+
+        <div class="creator2">
+            <div class="rank">
+                <span>#2</span>
+            </div>
+            <div class="avatar">
+                <img src="{% static 'images/top-players/player3.png' %}" alt="Creator 2 Avatar">
+            </div>
+            <div class="details">
+                <h3>Rahis yt</h3>
+                <p>Hosted: 110 Tournaments</p>
+            </div>
+            <div class="badge">
+                <ion-icon name="medal"></ion-icon>
+            </div>
+        </div>
+
+        <div class="creator2">
+            <div class="rank">
+                <span>#3</span>
+            </div>
+            <div class="avatar">
+                <img src="{% static 'images/top-players/player3.png' %}" alt="Creator 2 Avatar">
+            </div>
+            <div class="details">
+                <h3>Haya FF</h3>
+                <p>Hosted: 110 Tournaments</p>
+            </div>
+            <div class="badge">
+                <ion-icon name="medal"></ion-icon>
+            </div>
+        </div>
+
+        <div class="creator2">
+            <div class="rank">
+                <span>#4</span>
+            </div>
+            <div class="avatar">
+                <img src="{% static 'images/top-players/player3.png' %}" alt="Creator 2 Avatar">
+            </div>
+            <div class="details">
+                <h3>Amir</h3>
+                <p>Hosted: 110 Tournaments</p>
+            </div>
+            <div class="badge">
+                <ion-icon name="medal"></ion-icon>
+            </div>
+        </div>
+
+        <div class="creator2">
+            <div class="rank">
+                <span>#5</span>
+            </div>
+            <div class="avatar">
+                <img src="{% static 'images/top-players/player3.png' %}" alt="Creator 2 Avatar">
+            </div>
+            <div class="details">
+                <h3>Anish</h3>
+                <p>Hosted: 110 Tournaments</p>
+            </div>
+            <div class="badge">
+                <ion-icon name="medal"></ion-icon>
+            </div>
+        </div>
+
+        <div class="creator2">
+            <div class="rank">
+                <span>#6</span>
+            </div>
+            <div class="avatar">
+                <img src="{% static 'images/top-players/player3.png' %}" alt="Creator 2 Avatar">
+            </div>
+            <div class="details">
+                <h3>Ajju bhai</h3>
+                <p>Hosted: 110 Tournaments</p>
+            </div>
+            <div class="badge">
+                <ion-icon name="medal"></ion-icon>
+            </div>
+        </div>
+
+        <div class="creator2">
+            <div class="rank">
+                <span>#7</span>
+            </div>
+            <div class="avatar">
+                <img src="{% static 'images/top-players/player3.png' %}" alt="Creator 2 Avatar">
+            </div>
+            <div class="details">
+                <h3>Sunita Gamer</h3>
+                <p>Hosted: 110 Tournaments</p>
+            </div>
+            <div class="badge">
+                <ion-icon name="medal"></ion-icon>
+            </div>
+        </div>
+
+        <div class="creator2">
+            <div class="rank">
+                <span>#8</span>
+            </div>
+            <div class="avatar">
+                <img src="{% static 'images/top-players/player3.png' %}" alt="Creator 2 Avatar">
+            </div>
+            <div class="details">
+                <h3>laka Gamer</h3>
+                <p>Hosted: 110 Tournaments</p>
+            </div>
+            <div class="badge">
+                <ion-icon name="medal"></ion-icon>
+            </div>
+        </div>
+
+        <div class="creator2">
+            <div class="rank">
+                <span>#9</span>
+            </div>
+            <div class="avatar">
+                <img src="{% static 'images/top-players/player3.png' %}" alt="Creator 2 Avatar">
+            </div>
+            <div class="details">
+                <h3>Kanxa yt</h3>
+                <p>Hosted: 110 Tournaments</p>
+            </div>
+            <div class="badge">
+                <ion-icon name="medal"></ion-icon>
+            </div>
+        </div>
+
+        <div class="creator2">
+            <div class="rank">
+                <span>#10</span>
+            </div>
+            <div class="avatar">
+                <img src="images/creator2.jpg" alt="Creator 2 Avatar">
+            </div>
+            <div class="details">
+                <h3>Samman</h3>
+                <p>Hosted: 110 Tournaments</p>
+            </div>
+            <div class="badge">
+                <ion-icon name="medal"></ion-icon>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="{% static 'js/creators.js' %}"></script>
+{% endblock content %}

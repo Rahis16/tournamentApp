@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Walet{% endblock title %}
+
+{% block content %}
+<section class="wallet">
+    <!-- Header -->
+    <div class="wallet-header">
+        <h1>My Wallet</h1>
+    </div>
+
+    <!-- Balance Display -->
+    <div class="wallet-balance">
+        <div class="balance">
+            <img src="{% static 'images/coin.jpg' %}" alt="Coin Icon" class="coin-icon" />
+            <h2>10,000 Coins</h2>
+            <p>Equivalent to <strong>Rs. 1,000</strong></p>
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="wallet-actions">
+        <button class="top-up-btn">Top Up</button>
+        <button class="withdraw-btn">Withdraw</button>
+    </div>
+
+    <!-- Transaction History -->
+    <div class="wallet-history">
+        <h3>Recent Transactions</h3>
+        <ul>
+            <li>
+                <span class="date">Dec 7, 2024</span>
+                <span class="details">Top-Up: <span class="positive">+500 Coins</span></span>
+            </li>
+            <li>
+                <span class="date">Dec 6, 2024</span>
+                <span class="details">Winnings: <span class="positive">+1000 Coins</span></span>
+            </li>
+            <li>
+                <span class="date">Dec 5, 2024</span>
+                <span class="details">Withdrawal: <span class="negative">-100 Coins</span></span>
+            </li>
+            <li>
+                <span class="date">Dec 5, 2024</span>
+                <span class="details">Withdrawal: <span class="negative">-100 Coins</span></span>
+            </li>
+            <li>
+                <span class="date">Dec 5, 2024</span>
+                <span class="details">Withdrawal: <span class="negative">-100 Coins</span></span>
+            </li>
+            <li>
+                <span class="date">Dec 5, 2024</span>
+                <span class="details">Withdrawal: <span class="negative">-100 Coins</span></span>
+            </li>
+            <li>
+                <span class="date">Dec 5, 2024</span>
+                <span class="details">Withdrawal: <span class="negative">-100 Coins</span></span>
+            </li>
+            <li>
+                <span class="date">Dec 5, 2024</span>
+                <span class="details">Withdrawal: <span class="negative">-100 Coins</span></span>
+            </li>
+            <li>
+                <span class="date">Dec 5, 2024</span>
+                <span class="details">Withdrawal: <span class="negative">-100 Coins</span></span>
+            </li>
+            <li>
+                <span class="date">Dec 5, 2024</span>
+                <span class="details">Withdrawal: <span class="negative">-100 Coins</span></span>
+            </li>
+            <li>
+                <span class="date">Dec 5, 2024</span>
+                <span class="details">Withdrawal: <span class="negative">-100 Coins</span></span>
+            </li>
+            <li>
+                <span class="date">Dec 5, 2024</span>
+                <span class="details">Withdrawal: <span class="negative">-100 Coins</span></span>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+<script src="{% static 'js/walet.js' %}"></script>
+{% endblock content %}

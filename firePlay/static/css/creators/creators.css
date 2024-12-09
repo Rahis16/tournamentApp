@@ -1,0 +1,109 @@
+/* Top Creators Section */
+.top-creators {
+    width: 70%;
+    margin: 7.5rem auto;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: black;
+}
+
+/* Header */
+.creators-header h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #4444;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 5px 20px;
+    background-color: #ff5201;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-bar button ion-icon{
+    font-size: 25px;
+}
+
+.search-bar button:hover {
+    background-color: #007bff;
+}
+
+/* Creator List */
+.creator-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual Creator */
+.creator2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    background: #ffffff22;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-bottom: .1px solid #4444;
+}
+
+.creator2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Rank */
+.creator2 .rank {
+    font-size: 24px;
+    font-weight: bold;
+    color:  #ffaa00;
+}
+
+/* Avatar */
+.creator2 .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+}
+
+/* Details */
+.creator2 .details h3 {
+    font-size: 18px;
+    margin: 0;
+    color: black;
+}
+
+.creator2 .details p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Badge */
+.creator2 .badge {
+    font-size: 24px;
+    color: #fff;
+}

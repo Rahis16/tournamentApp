@@ -1,0 +1,77 @@
+/* Notifications Section */
+.notifications {
+    width: 70%;
+    margin: 7.5rem auto;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+/* Header */
+.notifications-header h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Notification List */
+.notification-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #ffffff22;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-bottom: .1px solid #9a9a9a55;
+}
+
+.notification:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon */
+.notification .icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #007BFF;
+    color: #fff;
+    font-size: 24px;
+}
+
+.notification .icon.new {
+    background: #28a745; /* Green for new notifications */
+}
+
+/* Content */
+.notification .content {
+    flex: 1;
+}
+
+.notification .content h3 {
+    font-size: 18px;
+    margin: 0 0 5px;
+    color: #fff;
+}
+
+.notification .content p {
+    font-size: 14px;
+    color: #111;
+}
+
+.notification .content .time {
+    font-size: 12px;
+    color: #444;
+}

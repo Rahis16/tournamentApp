@@ -1,0 +1,74 @@
+/* Top Players Section */
+.top-players {
+    width: 70%;
+    margin: 7.5rem auto;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+/* Header */
+.top-players-header h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Player List */
+.player-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Individual Player */
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    background: #ffffff22;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-bottom: .1px solid rgb(222, 222, 222);
+}
+
+.player:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Rank */
+.player .rank {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffaa00;
+}
+
+/* Avatar */
+.player .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+}
+
+/* Details */
+.player .details h3 {
+    font-size: 18px;
+    margin: 0;
+    color: black;
+}
+
+.player .details p {
+    font-size: 14px;
+    color: #4444;
+}
+
+/* Badge */
+.player .badge {
+    font-size: 24px;
+    color: #ffaa00;
+}

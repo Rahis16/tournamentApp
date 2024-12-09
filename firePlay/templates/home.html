@@ -1,0 +1,1003 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+<section class="home">
+  {% comment %}Carousel{% endcomment %}
+
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-slide">
+        <img src="{% static 'images/carousels/c1.jpg' %}" alt="Promo 1" />
+        <div class="c-btn">
+          <button type="submit" class="c-join">Register Now</button>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="{% static 'images/carousels/c2.jpg' %}" alt="Promo 2" />
+        <div class="c-btn">
+          <button type="submit" class="c-join">Register Now</button>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="{% static 'images/carousels/c3.jpg' %}" alt="Promo 3" />
+        <div class="c-btn">
+          <button type="submit" class="c-join">Register Now</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-btn prev">❮</button>
+    <button class="carousel-btn next">❯</button>
+  </div>
+
+  {% comment %}featured tournamnts{% endcomment %}
+
+  <div class="filter-section">
+    <h2>Featured Tournaments</h2>
+    <div class="filter-options">
+      <!-- Game Type Filter -->
+      <div class="filter-option">
+        <label for="game-type">Game Type</label>
+        <select id="game-type" name="game-type">
+          <option value="action">Action</option>
+          <option value="strategy">Strategy</option>
+          <option value="sports">Sports</option>
+          <!-- Add more game types as needed -->
+        </select>
+      </div>
+
+      <!-- Game Name Filter -->
+      <div class="filter-option">
+        <label for="game-name">Game Name</label>
+        <select id="game-name" name="game-name">
+          <option value="free-fire">Free Fire</option>
+          <option value="pubg">PUBG</option>
+          <option value="fortnite">Fortnite</option>
+          <!-- Add more game names as needed -->
+        </select>
+      </div>
+
+      <div class="filter-option">
+        <label for="entry-fee">Entry Fee</label>
+        <select id="entry-fee" name="entry-fee">
+          <option value="10">Rs 10</option>
+          <option value="20">Rs 20</option>
+          <option value="30">Rs 30</option>
+          <!-- Add more game names as needed -->
+        </select>
+      </div>
+
+    </div>
+
+    <!-- Apply Filters Button -->
+    <div class="filter-action">
+      <button class="apply-filters">Apply Filters</button>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <a href="" class="creator">
+        <img src="{% static 'images/logo.jpg' %}" alt="user" />
+        <div class="name-time">
+          <span class="creatorname">@Haya_ff</span>
+          <span class="time">5 mins ago</span>
+        </div>
+        <button type="submit" class="follow">follow +</button>
+      </a>
+
+      <div class="date-time">
+        <p>Date: 10th Dec 2024</p>
+        <p>Time: 7:00 PM</p>
+      </div>
+      <div class="title">
+        Freefire Championship<ion-icon name="trophy-sharp" class="trophy"></ion-icon>
+      </div>
+      <div class="card-grp">
+        <span class="row1">Game Type: Battle Royal (Solo)</span>
+        <span class="row1">Entry Fee: Rs 10</span>
+      </div>
+      <div class="card-grp">
+        <span class="total-slot">Total Slots: 48</span>
+        <span class="available-slots">Available Slots: 20</span>
+      </div>
+      <table>
+        <thead>
+          <th>Position</th>
+          <th>Prize</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st Player</td>
+            <td>Rs 40</td>
+          </tr>
+          <tr>
+            <td>2nd Player</td>
+            <td>Rs 30</td>
+          </tr>
+          <tr>
+            <td>3rd Player</td>
+            <td>Rs 20</td>
+          </tr>
+          <tr>
+            <td>4th - 10th Player</td>
+            <td>Rs 15 each</td>
+          </tr>
+          <tr>
+            <td>11th - 20th Player</td>
+            <td>Rs 10 each</td>
+          </tr>
+          <tr>
+            <td>21th - 40th Player</td>
+            <td>Rs 5 each</td>
+          </tr>
+          <tr>
+            <td>41th - 48th Player</td>
+            <td>No prize</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button type="submit" class="join">Join Now</button>
+      </div>
+      <div class="interactions">
+        <button class="share"><ion-icon name="share-social-outline"></ion-icon>Share</button>
+        <button class="like"><ion-icon name="heart-outline"></ion-icon>Like</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="" class="creator">
+        <img src="{% static 'images/logo.jpg' %}" alt="user" />
+        <div class="name-time">
+          <span class="creatorname">@Haya_ff</span>
+          <span class="time">5 mins ago</span>
+        </div>
+        <button type="submit" class="follow">follow +</button>
+      </a>
+
+      <div class="date-time">
+        <p>Date: 10th Dec 2024</p>
+        <p>Time: 7:00 PM</p>
+      </div>
+      <div class="title">
+        Freefire Championship<ion-icon name="trophy-sharp" class="trophy"></ion-icon>
+      </div>
+      <div class="card-grp">
+        <span class="row1">Game Type: Battle Royal (Solo)</span>
+        <span class="row1">Entry Fee: Rs 10</span>
+      </div>
+      <div class="card-grp">
+        <span class="total-slot">Total Slots: 48</span>
+        <span class="available-slots">Available Slots: 20</span>
+      </div>
+      <table>
+        <thead>
+          <th>Position</th>
+          <th>Prize</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st Player</td>
+            <td>Rs 40</td>
+          </tr>
+          <tr>
+            <td>2nd Player</td>
+            <td>Rs 30</td>
+          </tr>
+          <tr>
+            <td>3rd Player</td>
+            <td>Rs 20</td>
+          </tr>
+          <tr>
+            <td>4th - 10th Player</td>
+            <td>Rs 15 each</td>
+          </tr>
+          <tr>
+            <td>11th - 20th Player</td>
+            <td>Rs 10 each</td>
+          </tr>
+          <tr>
+            <td>21th - 40th Player</td>
+            <td>Rs 5 each</td>
+          </tr>
+          <tr>
+            <td>41th - 48th Player</td>
+            <td>No prize</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button type="submit" class="join">Join Now</button>
+      </div>
+      <div class="interactions">
+        <button class="share"><ion-icon name="share-social-outline"></ion-icon>Share</button>
+        <button class="like"><ion-icon name="heart-outline"></ion-icon>Like</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="" class="creator">
+        <img src="{% static 'images/logo.jpg' %}" alt="user" />
+        <div class="name-time">
+          <span class="creatorname">@Haya_ff</span>
+          <span class="time">5 mins ago</span>
+        </div>
+        <button type="submit" class="follow">follow +</button>
+      </a>
+
+      <div class="date-time">
+        <p>Date: 10th Dec 2024</p>
+        <p>Time: 7:00 PM</p>
+      </div>
+      <div class="title">
+        Freefire Championship<ion-icon name="trophy-sharp" class="trophy"></ion-icon>
+      </div>
+      <div class="card-grp">
+        <span class="row1">Game Type: Battle Royal (Solo)</span>
+        <span class="row1">Entry Fee: Rs 10</span>
+      </div>
+      <div class="card-grp">
+        <span class="total-slot">Total Slots: 48</span>
+        <span class="available-slots">Available Slots: 20</span>
+      </div>
+      <table>
+        <thead>
+          <th>Position</th>
+          <th>Prize</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st Player</td>
+            <td>Rs 40</td>
+          </tr>
+          <tr>
+            <td>2nd Player</td>
+            <td>Rs 30</td>
+          </tr>
+          <tr>
+            <td>3rd Player</td>
+            <td>Rs 20</td>
+          </tr>
+          <tr>
+            <td>4th - 10th Player</td>
+            <td>Rs 15 each</td>
+          </tr>
+          <tr>
+            <td>11th - 20th Player</td>
+            <td>Rs 10 each</td>
+          </tr>
+          <tr>
+            <td>21th - 40th Player</td>
+            <td>Rs 5 each</td>
+          </tr>
+          <tr>
+            <td>41th - 48th Player</td>
+            <td>No prize</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button type="submit" class="join">Join Now</button>
+      </div>
+      <div class="interactions">
+        <button class="share"><ion-icon name="share-social-outline"></ion-icon>Share</button>
+        <button class="like"><ion-icon name="heart-outline"></ion-icon>Like</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="" class="creator">
+        <img src="{% static 'images/logo.jpg' %}" alt="user" />
+        <div class="name-time">
+          <span class="creatorname">@Haya_ff</span>
+          <span class="time">5 mins ago</span>
+        </div>
+        <button type="submit" class="follow">follow +</button>
+      </a>
+
+      <div class="date-time">
+        <p>Date: 10th Dec 2024</p>
+        <p>Time: 7:00 PM</p>
+      </div>
+      <div class="title">
+        Freefire Championship<ion-icon name="trophy-sharp" class="trophy"></ion-icon>
+      </div>
+      <div class="card-grp">
+        <span class="row1">Game Type: Battle Royal (Solo)</span>
+        <span class="row1">Entry Fee: Rs 10</span>
+      </div>
+      <div class="card-grp">
+        <span class="total-slot">Total Slots: 48</span>
+        <span class="available-slots">Available Slots: 20</span>
+      </div>
+      <table>
+        <thead>
+          <th>Position</th>
+          <th>Prize</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st Player</td>
+            <td>Rs 40</td>
+          </tr>
+          <tr>
+            <td>2nd Player</td>
+            <td>Rs 30</td>
+          </tr>
+          <tr>
+            <td>3rd Player</td>
+            <td>Rs 20</td>
+          </tr>
+          <tr>
+            <td>4th - 10th Player</td>
+            <td>Rs 15 each</td>
+          </tr>
+          <tr>
+            <td>11th - 20th Player</td>
+            <td>Rs 10 each</td>
+          </tr>
+          <tr>
+            <td>21th - 40th Player</td>
+            <td>Rs 5 each</td>
+          </tr>
+          <tr>
+            <td>41th - 48th Player</td>
+            <td>No prize</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button type="submit" class="join">Join Now</button>
+      </div>
+      <div class="interactions">
+        <button class="share"><ion-icon name="share-social-outline"></ion-icon>Share</button>
+        <button class="like"><ion-icon name="heart-outline"></ion-icon>Like</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <a href="" class="creator">
+        <img src="{% static 'images/logo.jpg' %}" alt="user" />
+        <div class="name-time">
+          <span class="creatorname">@Haya_ff</span>
+          <span class="time">5 mins ago</span>
+        </div>
+        <button type="submit" class="follow">follow +</button>
+      </a>
+
+      <div class="date-time">
+        <p>Date: 10th Dec 2024</p>
+        <p>Time: 7:00 PM</p>
+      </div>
+      <div class="title">
+        Freefire Championship<ion-icon name="trophy-sharp" class="trophy"></ion-icon>
+      </div>
+      <div class="card-grp">
+        <span class="row1">Game Type: Battle Royal (Solo)</span>
+        <span class="row1">Entry Fee: Rs 10</span>
+      </div>
+      <div class="card-grp">
+        <span class="total-slot">Total Slots: 48</span>
+        <span class="available-slots">Available Slots: 20</span>
+      </div>
+      <table>
+        <thead>
+          <th>Position</th>
+          <th>Prize</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st Player</td>
+            <td>Rs 40</td>
+          </tr>
+          <tr>
+            <td>2nd Player</td>
+            <td>Rs 30</td>
+          </tr>
+          <tr>
+            <td>3rd Player</td>
+            <td>Rs 20</td>
+          </tr>
+          <tr>
+            <td>4th - 10th Player</td>
+            <td>Rs 15 each</td>
+          </tr>
+          <tr>
+            <td>11th - 20th Player</td>
+            <td>Rs 10 each</td>
+          </tr>
+          <tr>
+            <td>21th - 40th Player</td>
+            <td>Rs 5 each</td>
+          </tr>
+          <tr>
+            <td>41th - 48th Player</td>
+            <td>No prize</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button type="submit" class="join">Join Now</button>
+      </div>
+      <div class="interactions">
+        <button class="share"><ion-icon name="share-social-outline"></ion-icon>Share</button>
+        <button class="like"><ion-icon name="heart-outline"></ion-icon>Like</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <a href="" class="creator">
+        <img src="{% static 'images/logo.jpg' %}" alt="user" />
+        <div class="name-time">
+          <span class="creatorname">@Haya_ff</span>
+          <span class="time">5 mins ago</span>
+        </div>
+        <button type="submit" class="follow">follow +</button>
+      </a>
+
+      <div class="date-time">
+        <p>Date: 10th Dec 2024</p>
+        <p>Time: 7:00 PM</p>
+      </div>
+      <div class="title">
+        Freefire Championship<ion-icon name="trophy-sharp" class="trophy"></ion-icon>
+      </div>
+      <div class="card-grp">
+        <span class="row1">Game Type: Battle Royal (Solo)</span>
+        <span class="row1">Entry Fee: Rs 10</span>
+      </div>
+      <div class="card-grp">
+        <span class="total-slot">Total Slots: 48</span>
+        <span class="available-slots">Available Slots: 20</span>
+      </div>
+      <table>
+        <thead>
+          <th>Position</th>
+          <th>Prize</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st Player</td>
+            <td>Rs 40</td>
+          </tr>
+          <tr>
+            <td>2nd Player</td>
+            <td>Rs 30</td>
+          </tr>
+          <tr>
+            <td>3rd Player</td>
+            <td>Rs 20</td>
+          </tr>
+          <tr>
+            <td>4th - 10th Player</td>
+            <td>Rs 15 each</td>
+          </tr>
+          <tr>
+            <td>11th - 20th Player</td>
+            <td>Rs 10 each</td>
+          </tr>
+          <tr>
+            <td>21th - 40th Player</td>
+            <td>Rs 5 each</td>
+          </tr>
+          <tr>
+            <td>41th - 48th Player</td>
+            <td>No prize</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button type="submit" class="join">Join Now</button>
+      </div>
+      <div class="interactions">
+        <button class="share"><ion-icon name="share-social-outline"></ion-icon>Share</button>
+        <button class="like"><ion-icon name="heart-outline"></ion-icon>Like</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="" class="creator">
+        <img src="{% static 'images/logo.jpg' %}" alt="user" />
+        <div class="name-time">
+          <span class="creatorname">@Haya_ff</span>
+          <span class="time">5 mins ago</span>
+        </div>
+        <button type="submit" class="follow">follow +</button>
+      </a>
+
+      <div class="date-time">
+        <p>Date: 10th Dec 2024</p>
+        <p>Time: 7:00 PM</p>
+      </div>
+      <div class="title">
+        Freefire Championship<ion-icon name="trophy-sharp" class="trophy"></ion-icon>
+      </div>
+      <div class="card-grp">
+        <span class="row1">Game Type: Battle Royal (Solo)</span>
+        <span class="row1">Entry Fee: Rs 10</span>
+      </div>
+      <div class="card-grp">
+        <span class="total-slot">Total Slots: 48</span>
+        <span class="available-slots">Available Slots: 20</span>
+      </div>
+      <table>
+        <thead>
+          <th>Position</th>
+          <th>Prize</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st Player</td>
+            <td>Rs 40</td>
+          </tr>
+          <tr>
+            <td>2nd Player</td>
+            <td>Rs 30</td>
+          </tr>
+          <tr>
+            <td>3rd Player</td>
+            <td>Rs 20</td>
+          </tr>
+          <tr>
+            <td>4th - 10th Player</td>
+            <td>Rs 15 each</td>
+          </tr>
+          <tr>
+            <td>11th - 20th Player</td>
+            <td>Rs 10 each</td>
+          </tr>
+          <tr>
+            <td>21th - 40th Player</td>
+            <td>Rs 5 each</td>
+          </tr>
+          <tr>
+            <td>41th - 48th Player</td>
+            <td>No prize</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button type="submit" class="join">Join Now</button>
+      </div>
+      <div class="interactions">
+        <button class="share"><ion-icon name="share-social-outline"></ion-icon>Share</button>
+        <button class="like"><ion-icon name="heart-outline"></ion-icon>Like</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <a href="" class="creator">
+        <img src="{% static 'images/logo.jpg' %}" alt="user" />
+        <div class="name-time">
+          <span class="creatorname">@Haya_ff</span>
+          <span class="time">5 mins ago</span>
+        </div>
+        <button type="submit" class="follow">follow +</button>
+      </a>
+
+      <div class="date-time">
+        <p>Date: 10th Dec 2024</p>
+        <p>Time: 7:00 PM</p>
+      </div>
+      <div class="title">
+        Freefire Championship<ion-icon name="trophy-sharp" class="trophy"></ion-icon>
+      </div>
+      <div class="card-grp">
+        <span class="row1">Game Type: Battle Royal (Solo)</span>
+        <span class="row1">Entry Fee: Rs 10</span>
+      </div>
+      <div class="card-grp">
+        <span class="total-slot">Total Slots: 48</span>
+        <span class="available-slots">Available Slots: 20</span>
+      </div>
+      <table>
+        <thead>
+          <th>Position</th>
+          <th>Prize</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st Player</td>
+            <td>Rs 40</td>
+          </tr>
+          <tr>
+            <td>2nd Player</td>
+            <td>Rs 30</td>
+          </tr>
+          <tr>
+            <td>3rd Player</td>
+            <td>Rs 20</td>
+          </tr>
+          <tr>
+            <td>4th - 10th Player</td>
+            <td>Rs 15 each</td>
+          </tr>
+          <tr>
+            <td>11th - 20th Player</td>
+            <td>Rs 10 each</td>
+          </tr>
+          <tr>
+            <td>21th - 40th Player</td>
+            <td>Rs 5 each</td>
+          </tr>
+          <tr>
+            <td>41th - 48th Player</td>
+            <td>No prize</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button type="submit" class="join">Join Now</button>
+      </div>
+      <div class="interactions">
+        <button class="share"><ion-icon name="share-social-outline"></ion-icon>Share</button>
+        <button class="like"><ion-icon name="heart-outline"></ion-icon>Like</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <a href="" class="creator">
+        <img src="{% static 'images/logo.jpg' %}" alt="user" />
+        <div class="name-time">
+          <span class="creatorname">@Haya_ff</span>
+          <span class="time">5 mins ago</span>
+        </div>
+        <button type="submit" class="follow">follow +</button>
+      </a>
+
+      <div class="date-time">
+        <p>Date: 10th Dec 2024</p>
+        <p>Time: 7:00 PM</p>
+      </div>
+      <div class="title">
+        Freefire Championship<ion-icon name="trophy-sharp" class="trophy"></ion-icon>
+      </div>
+      <div class="card-grp">
+        <span class="row1">Game Type: Battle Royal (Solo)</span>
+        <span class="row1">Entry Fee: Rs 10</span>
+      </div>
+      <div class="card-grp">
+        <span class="total-slot">Total Slots: 48</span>
+        <span class="available-slots">Available Slots: 20</span>
+      </div>
+      <table>
+        <thead>
+          <th>Position</th>
+          <th>Prize</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st Player</td>
+            <td>Rs 40</td>
+          </tr>
+          <tr>
+            <td>2nd Player</td>
+            <td>Rs 30</td>
+          </tr>
+          <tr>
+            <td>3rd Player</td>
+            <td>Rs 20</td>
+          </tr>
+          <tr>
+            <td>4th - 10th Player</td>
+            <td>Rs 15 each</td>
+          </tr>
+          <tr>
+            <td>11th - 20th Player</td>
+            <td>Rs 10 each</td>
+          </tr>
+          <tr>
+            <td>21th - 40th Player</td>
+            <td>Rs 5 each</td>
+          </tr>
+          <tr>
+            <td>41th - 48th Player</td>
+            <td>No prize</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button type="submit" class="join">Join Now</button>
+      </div>
+      <div class="interactions">
+        <button class="share"><ion-icon name="share-social-outline"></ion-icon>Share</button>
+        <button class="like"><ion-icon name="heart-outline"></ion-icon>Like</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <a href="" class="creator">
+        <img src="{% static 'images/logo.jpg' %}" alt="user" />
+        <div class="name-time">
+          <span class="creatorname">@Haya_ff</span>
+          <span class="time">5 mins ago</span>
+        </div>
+        <button type="submit" class="follow">follow +</button>
+      </a>
+
+      <div class="date-time">
+        <p>Date: 10th Dec 2024</p>
+        <p>Time: 7:00 PM</p>
+      </div>
+      <div class="title">
+        Freefire Championship<ion-icon name="trophy-sharp" class="trophy"></ion-icon>
+      </div>
+      <div class="card-grp">
+        <span class="row1">Game Type: Battle Royal (Solo)</span>
+        <span class="row1">Entry Fee: Rs 10</span>
+      </div>
+      <div class="card-grp">
+        <span class="total-slot">Total Slots: 48</span>
+        <span class="available-slots">Available Slots: 20</span>
+      </div>
+      <table>
+        <thead>
+          <th>Position</th>
+          <th>Prize</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st Player</td>
+            <td>Rs 40</td>
+          </tr>
+          <tr>
+            <td>2nd Player</td>
+            <td>Rs 30</td>
+          </tr>
+          <tr>
+            <td>3rd Player</td>
+            <td>Rs 20</td>
+          </tr>
+          <tr>
+            <td>4th - 10th Player</td>
+            <td>Rs 15 each</td>
+          </tr>
+          <tr>
+            <td>11th - 20th Player</td>
+            <td>Rs 10 each</td>
+          </tr>
+          <tr>
+            <td>21th - 40th Player</td>
+            <td>Rs 5 each</td>
+          </tr>
+          <tr>
+            <td>41th - 48th Player</td>
+            <td>No prize</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button type="submit" class="join">Join Now</button>
+      </div>
+      <div class="interactions">
+        <button class="share"><ion-icon name="share-social-outline"></ion-icon>Share</button>
+        <button class="like"><ion-icon name="heart-outline"></ion-icon>Like</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <a href="" class="creator">
+        <img src="{% static 'images/logo.jpg' %}" alt="user" />
+        <div class="name-time">
+          <span class="creatorname">@Haya_ff</span>
+          <span class="time">5 mins ago</span>
+        </div>
+        <button type="submit" class="follow">follow +</button>
+      </a>
+
+      <div class="date-time">
+        <p>Date: 10th Dec 2024</p>
+        <p>Time: 7:00 PM</p>
+      </div>
+      <div class="title">
+        Freefire Championship<ion-icon name="trophy-sharp" class="trophy"></ion-icon>
+      </div>
+      <div class="card-grp">
+        <span class="row1">Game Type: Battle Royal (Solo)</span>
+        <span class="row1">Entry Fee: Rs 10</span>
+      </div>
+      <div class="card-grp">
+        <span class="total-slot">Total Slots: 48</span>
+        <span class="available-slots">Available Slots: 20</span>
+      </div>
+      <table>
+        <thead>
+          <th>Position</th>
+          <th>Prize</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st Player</td>
+            <td>Rs 40</td>
+          </tr>
+          <tr>
+            <td>2nd Player</td>
+            <td>Rs 30</td>
+          </tr>
+          <tr>
+            <td>3rd Player</td>
+            <td>Rs 20</td>
+          </tr>
+          <tr>
+            <td>4th - 10th Player</td>
+            <td>Rs 15 each</td>
+          </tr>
+          <tr>
+            <td>11th - 20th Player</td>
+            <td>Rs 10 each</td>
+          </tr>
+          <tr>
+            <td>21th - 40th Player</td>
+            <td>Rs 5 each</td>
+          </tr>
+          <tr>
+            <td>41th - 48th Player</td>
+            <td>No prize</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button type="submit" class="join">Join Now</button>
+      </div>
+      <div class="interactions">
+        <button class="share"><ion-icon name="share-social-outline"></ion-icon>Share</button>
+        <button class="like"><ion-icon name="heart-outline"></ion-icon>Like</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="" class="creator">
+        <img src="{% static 'images/logo.jpg' %}" alt="user" />
+        <div class="name-time">
+          <span class="creatorname">@Haya_ff</span>
+          <span class="time">5 mins ago</span>
+        </div>
+        <button type="submit" class="follow">follow +</button>
+      </a>
+
+      <div class="date-time">
+        <p>Date: 10th Dec 2024</p>
+        <p>Time: 7:00 PM</p>
+      </div>
+      <div class="title">
+        Freefire Championship<ion-icon name="trophy-sharp" class="trophy"></ion-icon>
+      </div>
+      <div class="card-grp">
+        <span class="row1">Game Type: Battle Royal (Solo)</span>
+        <span class="row1">Entry Fee: Rs 10</span>
+      </div>
+      <div class="card-grp">
+        <span class="total-slot">Total Slots: 48</span>
+        <span class="available-slots">Available Slots: 20</span>
+      </div>
+      <table>
+        <thead>
+          <th>Position</th>
+          <th>Prize</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st Player</td>
+            <td>Rs 40</td>
+          </tr>
+          <tr>
+            <td>2nd Player</td>
+            <td>Rs 30</td>
+          </tr>
+          <tr>
+            <td>3rd Player</td>
+            <td>Rs 20</td>
+          </tr>
+          <tr>
+            <td>4th - 10th Player</td>
+            <td>Rs 15 each</td>
+          </tr>
+          <tr>
+            <td>11th - 20th Player</td>
+            <td>Rs 10 each</td>
+          </tr>
+          <tr>
+            <td>21th - 40th Player</td>
+            <td>Rs 5 each</td>
+          </tr>
+          <tr>
+            <td>41th - 48th Player</td>
+            <td>No prize</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button type="submit" class="join">Join Now</button>
+      </div>
+      <div class="interactions">
+        <button class="share"><ion-icon name="share-social-outline"></ion-icon>Share</button>
+        <button class="like"><ion-icon name="heart-outline"></ion-icon>Like</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="" class="creator">
+        <img src="{% static 'images/logo.jpg' %}" alt="user" />
+        <div class="name-time">
+          <span class="creatorname">@Haya_ff</span>
+          <span class="time">5 mins ago</span>
+        </div>
+        <button type="submit" class="follow">follow +</button>
+      </a>
+
+      <div class="date-time">
+        <p>Date: 10th Dec 2024</p>
+        <p>Time: 7:00 PM</p>
+      </div>
+      <div class="title">
+        Freefire Championship<ion-icon name="trophy-sharp" class="trophy"></ion-icon>
+      </div>
+      <div class="card-grp">
+        <span class="row1">Game Type: Battle Royal (Solo)</span>
+        <span class="row1">Entry Fee: Rs 10</span>
+      </div>
+      <div class="card-grp">
+        <span class="total-slot">Total Slots: 48</span>
+        <span class="available-slots">Available Slots: 20</span>
+      </div>
+      <table>
+        <thead>
+          <th>Position</th>
+          <th>Prize</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st Player</td>
+            <td>Rs 40</td>
+          </tr>
+          <tr>
+            <td>2nd Player</td>
+            <td>Rs 30</td>
+          </tr>
+          <tr>
+            <td>3rd Player</td>
+            <td>Rs 20</td>
+          </tr>
+          <tr>
+            <td>4th - 10th Player</td>
+            <td>Rs 15 each</td>
+          </tr>
+          <tr>
+            <td>11th - 20th Player</td>
+            <td>Rs 10 each</td>
+          </tr>
+          <tr>
+            <td>21th - 40th Player</td>
+            <td>Rs 5 each</td>
+          </tr>
+          <tr>
+            <td>41th - 48th Player</td>
+            <td>No prize</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="buttons">
+        <button type="submit" class="join">Join Now</button>
+      </div>
+      <div class="interactions">
+        <button class="share"><ion-icon name="share-social-outline"></ion-icon>Share</button>
+        <button class="like"><ion-icon name="heart-outline"></ion-icon>Like</button>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<script src="{% static 'js/scroll.js' %}"></script>
+<script src="{% static 'js/carousel.js' %}"></script>
+{% endblock %}

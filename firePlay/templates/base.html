@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <title>
+      {% block title %}
+
+      {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/base/navPC.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/home/home.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/tournament/tournament.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/walet/walet.css' %}">
+    <link rel="stylesheet" href="{% static 'css/notification/notification.css' %}">
+    <link rel="stylesheet" href="{% static 'css/top-players/top-players.css' %}">
+    <link rel="stylesheet" href="{% static 'css/creators/creators.css' %}">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="{% static 'images/main-logo.png' %}" alt="logo" />
+      </div>
+      <div class="navs">
+        <a href="{% url "home" %}" class="{% if request.path == "/" %}active-nav{% endif %}"><ion-icon name="home" class="nav-icons"></ion-icon><span>Home</span></a>
+        <a href="{% url "tournament" %}" class="{% if request.path == "/tournament/" %}active-nav{% endif %}"><ion-icon name="game-controller" class="nav-icons"></ion-icon><span>Tournaments</span></a>
+        <a href="{% url "walet" %}" class="{% if request.path == "/walet/" %}active-nav{% endif %}"><ion-icon name="wallet" class="nav-icons"></ion-icon><span>Walet</span></a>
+        <a href="{% url "notification" %}" class="{% if request.path == "/notification/" %}active-nav{% endif %}"><ion-icon name="notifications" class="nav-icons"></ion-icon><span>Notifications</span></a>
+        <a href="{% url "topPlayers" %}" class="{% if request.path == "/top-players/" %}active-nav{% endif %}"><ion-icon name="star" class="nav-icons"></ion-icon><span>Top Players</span></a>
+        <a href="{% url "creators" %}" class="{% if request.path == "/creators/" %}active-nav{% endif %}"><ion-icon name="rocket" class="nav-icons"></ion-icon><span>Creators</span></a>
+      </div>
+      <div class="login-signup">
+        <a href="">Login</a>
+        <a href="">Sign Up</a>
+      </div>
+      <a href="">
+        <div class="profile">
+          <div class="profile-img">
+            <img src="{% static 'images/logo.jpg' %}" alt="img" />
+          </div>
+          <div class="username">@rahis_yt</div>
+        </div>
+      </a>
+    </nav>
+
+    <section class="App-container">
+      {% block content %}
+
+      {% endblock %}
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
